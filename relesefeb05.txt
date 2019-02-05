@@ -1,0 +1,35 @@
+/*
+--
+-- $Header        : XXRR_INC8050434_CREATEA.sql
+--
+-- Copyright (c) 2006, by Dell Inc., All Rights Reserved
+--
+-- Author         : Munshi
+-- Create Date    : 30-Jan-2019
+-- Script Location: $XXRR_TOP/sql
+-- Purpose        : This script is to create dirver table for Arrangement tables
+--                 
+-- Usage          : Run it under APPS Schema on DIReCT Instance
+-- Description    : SQL Script
+-- Notes          : 
+--
+-- History
+-- Name                         Date        Version    Description
+-- ---------------------------- ----------- ---------- ---------------------------------
+-- Chandra Kanth                30-Jan-2019      1.0        Initial Version
+*/
+
+WHENEVER SQLERROR EXIT FAILURE ROLLBACK
+--
+PROMPT Running creating Driver table xxstg.xxrr_src_INC8050434_bkp 
+--
+
+CREATE TABLE xxstg.xxrr_src_INC8050434_bkp
+(
+ arrangement_number          VARCHAR2(100),
+ SOURCE_LINE_REFERENCE11	 VARCHAR2(240)
+ )					  
+/
+
+
+PROMPT Command executed successfully... 
